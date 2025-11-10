@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="view_formio_builder_form_inherit_g2p" model="ir.ui.view">
+            <field name="name">formio.builder.form.g2p.inherit</field>
+            <field name="model">formio.builder</field>
+            <field name="inherit_id" ref="formio.view_formio_builder_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group" position="after">
+                    <group string="G2P">
+                        <field name="category" />
+                        <field name="program_mnemonic" />
+                        <field name="summary" />
+                        <field name="description" />
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

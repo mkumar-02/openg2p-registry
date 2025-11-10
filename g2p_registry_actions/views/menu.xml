@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!-- Try to place under an existing Registry menu if available; else create a root -->
+        <menuitem id="menu_g2p_root" name="Registry Actions" sequence="10" />
+        <menuitem
+            id="menu_g2p_registry_actions"
+            name="Registry Actions"
+            parent="menu_g2p_root"
+            action="action_g2p_registry_actions"
+            sequence="10"
+        />
+    </data>
+</odoo>
